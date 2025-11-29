@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends CI_Controller
+{
 
     public function __construct()
     {
@@ -12,6 +13,11 @@ class Auth extends CI_Controller {
 
     public function index()
     {
+        // Jika sudah login, langsung ke dashboard
+        if ($this->session->userdata('username')) {
+            redirect('dashboard');
+        }
+
         $data['login_message'] = $this->session->flashdata('login_message');
         $this->load->view('login', $data);
     }
@@ -23,7 +29,8 @@ class Auth extends CI_Controller {
         $level    = $this->input->post('level');
 
         if (empty($username) || empty($password) || empty($level)) {
-            $this->session->set_flashdata('login_message',
+            $this->session->set_flashdata(
+                'login_message',
                 "<div class='alert alert-danger mt-3'>Data tidak boleh kosong!</div>"
             );
             redirect('auth');
@@ -51,7 +58,8 @@ class Auth extends CI_Controller {
 
             redirect('dashboard');
         } else {
-            $this->session->set_flashdata('login_message',
+            $this->session->set_flashdata(
+                'login_message',
                 '<div class="alert alert-danger mt-3">Username atau password salah!</div>'
             );
             redirect('auth');
