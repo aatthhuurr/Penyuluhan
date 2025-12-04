@@ -27,9 +27,9 @@
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <?php if ($this->session->flashdata('message')) : ?>
-                                <?=  $this->session->flashdata('message') ?>
-                                <?php endif ?>
-                                
+                                <?= $this->session->flashdata('message') ?>
+                            <?php endif ?>
+
                             <a href="<?= base_url('ortu/tambah') ?>" class="btn btn-labeled btn-primary">
                                 <span class="btn-label">
                                     <i class="fas fa-plus"> </i>
@@ -52,7 +52,7 @@
                                     <?php $no = 1;
                                     foreach ($list_ortu as $ortu) : ?>
                                         <tr>
-                                            <th scope="row"><?= $no ?></th>
+                                            <th scope="row"><?= $no++ ?></th>
                                             <td><?= $ortu['name_ibu'] ?></td>
                                             <td><?= $ortu['name_ayah'] ?></td>
                                             <td><?= $ortu['hubungan'] ?></td>
