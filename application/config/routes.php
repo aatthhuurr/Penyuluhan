@@ -52,7 +52,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//Data admin
 $route['login'] = 'auth';
 $route['auth']  = 'auth';
 $route['auth/login'] = 'auth/login';
 $route['logout'] = 'auth/logout';
+
+//Data orang tua
+$route['ortu'] = 'Ortu_controller/index';
+$route['ortu/tambah'] = 'Ortu_controller/tambah_ortu';
+$route['ortu/hapus/(:num)'] = 'Ortu_controller/hapus_ortu/$1';
+$route['ortu/edit/(:num)'] = 'Ortu_controller/edit_ortu/$1';
