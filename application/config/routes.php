@@ -63,4 +63,4 @@ $route['logout'] = 'auth/logout';
 $route['ortu'] = 'Ortu_controller/index';
 $route['ortu/tambah'] = 'Ortu_controller/tambah_ortu';
 $route['ortu/hapus/(:num)'] = 'Ortu_controller/hapus_ortu/$1';
-$route['ortu/edit/(:num)'] = 'Ortu_controller/edit_ortu/$1';
+$route['ortu/ubah/(:num)'] = 'Ortu_controller/ubah_ortu/$1';

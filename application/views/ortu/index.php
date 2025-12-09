@@ -59,8 +59,9 @@
                                             <td><?= $ortu['telp'] ?></td>
                                             <td><?= $ortu['alamat'] ?></td>
                                             <td>
-                                                <a href="<?= base_url('ortu/edit/') ?><?= $ortu['id_ortu'] ?>"><span class="badge bg-primary">Edit</span></a>
-                                                <a href="<?= base_url('ortu/hapus/') ?><?= $ortu['id_ortu'] ?>"><span class="badge bg-danger">Hapus</span></a>
+                                                <a href="<?= base_url('ortu/ubah/') ?><?= $ortu['id_ortu'] ?>"><span class="badge bg-primary">Ubah</span></a>
+                                                <a href="<?= base_url('ortu/hapus/') . $ortu['id_ortu'] ?>"><span class="badge bg-danger">Hapus</span></a>
+
                                             </td>
                                         </tr>
                                     <?php endforeach ?>
