@@ -7,6 +7,7 @@ class Anak_model extends CI_Model
         $this->db->select('
         anak.id_anak,
         anak.name,
+        anak.nik,
         anak.bb_lahir,
         anak.tb_lahir,
         anak.jk,

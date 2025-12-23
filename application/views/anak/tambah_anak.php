@@ -34,6 +34,10 @@
                                     <label class="form-label">Nama Anak</label>
                                     <input type="text" class="form-control" name="name" required>
                                 </div>
+                                <div class="mb-3">
+                                    <label class="form-label">NIK</label>
+                                    <input type="text" class="form-control" name="nik" required>
+                                </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Orang Tua</label>

@@ -25,6 +25,7 @@ class Anak_controller extends CI_Controller
             $data = [
                 'name'     => $this->input->post('name'),
                 'ortu_id'  => $this->input->post('ortu_id'),
+                'nik'      => $this->input->post('nik'),
                 'bb_lahir' => $this->input->post('bb_lahir'),
                 'tb_lahir' => $this->input->post('tb_lahir'),
                 'jk'       => $this->input->post('jk'),
