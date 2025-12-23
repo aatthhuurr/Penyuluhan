@@ -64,3 +64,9 @@ $route['ortu'] = 'Ortu_controller/index';
 $route['ortu/tambah'] = 'Ortu_controller/tambah_ortu';
 $route['ortu/hapus/(:num)'] = 'Ortu_controller/hapus_ortu/$1';
 $route['ortu/ubah/(:num)'] = 'Ortu_controller/ubah_ortu/$1';
+
+//Data anak
+$route['anak'] = 'Anak_controller/index';
+$route['anak/tambah'] = 'Anak_controller/tambah_anak';
+$route['anak/hapus/(:num)'] = 'Anak_controller/hapus_anak/$1';
+$route['anak/ubah/(:num)'] = 'Anak_controller/ubah_anak/$1';
