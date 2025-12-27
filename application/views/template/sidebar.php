@@ -75,13 +75,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?= base_url('kunjungan'); ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Kunjungan</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?= base_url('pengukuran'); ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Pengukuran</p>
               </a>

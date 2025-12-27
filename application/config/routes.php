@@ -70,3 +70,15 @@ $route['anak'] = 'Anak_controller/index';
 $route['anak/tambah'] = 'Anak_controller/tambah_anak';
 $route['anak/hapus/(:num)'] = 'Anak_controller/hapus_anak/$1';
 $route['anak/ubah/(:num)'] = 'Anak_controller/ubah_anak/$1';
+
+//Data kunjungan
+$route['kunjungan'] = 'Kunjungan_controller/index';
+$route['kunjungan/tambah'] = 'Kunjungan_controller/tambah_kunjungan';
+$route['kunjungan/hapus/(:num)'] = 'Kunjungan_controller/hapus_kunjungan/$1';
+$route['kunjungan/ubah/(:num)'] = 'Kunjungan_controller/ubah_kunjungan/$1';
+
+//Data pengukuran
+$route['pengukuran'] = 'Pengukuran_controller/index';
+$route['pengukuran/tambah'] = 'Pengukuran_controller/tambah_pengukuran';
+$route['pengukuran/hapus/(:num)'] = 'Pengukuran_controller/hapus_pengukuran/$1';
+$route['pengukuran/ubah/(:num)'] = 'Pengukuran_controller/ubah_pengukuran/$1';
